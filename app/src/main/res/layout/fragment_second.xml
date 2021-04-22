@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".notesUI.notesFragment.NotesFragment">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:theme="@style/Theme.NotesApp.AppBarOverlay"
+        android:id="@+id/appBar">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/Theme.NotesApp.PopupOverlay"
+
+
+        >
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:hint="here"
+            android:id="@+id/editText">
+
+        </EditText>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_add"
+            android:layout_marginStart="50sp"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/saveIcon">
+        </ImageView>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60sp"
+            android:layout_marginLeft="60dp"
+            android:src="@drawable/ic_action_name"
+            android:id="@+id/notifyIcon">
+
+        </ImageView>
+
+    </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:minLines="3"
+       app:layout_constraintTop_toBottomOf="@+id/appBar"
+       android:id="@+id/detailsTexts">
+
+   </EditText>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
